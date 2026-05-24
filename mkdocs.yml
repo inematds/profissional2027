@@ -1,0 +1,210 @@
+site_name: Profissional 2027
+site_description: Programa gratuito de formação de Implementadores de Soluções de IA para PMEs brasileiras
+site_author: Nei Maldaner — inema.vip
+site_url: https://inematds.github.io/profissional2027/
+repo_url: https://github.com/inematds/profissional2027
+repo_name: inematds/profissional2027
+edit_uri: edit/main/
+copyright: Conteúdo livre para uso, adaptação e redistribuição. inema.vip · inema.club
+
+docs_dir: docs
+site_dir: site
+
+exclude_docs: |
+  metodo/templates/
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/inematds
+      name: GitHub inematds
+    - icon: fontawesome/solid/globe
+      link: https://inema.vip
+      name: inema.vip
+    - icon: fontawesome/solid/graduation-cap
+      link: https://inema.club
+      name: inema.club
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.keys
+
+plugins:
+  - search:
+      lang: pt
+
+nav:
+  - Início: index.md
+
+  - Manifesto:
+    - 'Visão geral': conteudo/nivel-1-manifesto/01-manifesto.md
+    - 'Tese de mercado': conteudo/nivel-1-manifesto/02-tese-de-mercado.md
+    - 'Perfil do profissional': conteudo/nivel-1-manifesto/03-perfil-do-profissional.md
+    - 'A oportunidade': conteudo/nivel-1-manifesto/04-a-oportunidade.md
+    - 'Por que gratuito': conteudo/nivel-1-manifesto/05-por-que-gratuito.md
+    - 'Como funciona': conteudo/nivel-1-manifesto/06-como-funciona.md
+
+  - Método DPIA:
+    - 'Manual canônico': metodo/dpia-canonico.md
+    - 'Trilha D — Diagnosticar':
+      - 'Visão geral': conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/00-visao-geral.md
+      - 'Preparação pré-diagnóstico': conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/01-preparacao-pre-diagnostico.md
+      - 'Roteiro de entrevista': conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/02-roteiro-de-entrevista.md
+      - 'Mapeamento de dor real': conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/03-mapeamento-de-dor-real.md
+      - 'Baseline numérico': conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/04-baseline-numerico.md
+      - 'Relatório de diagnóstico': conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/05-relatorio-de-diagnostico.md
+    - 'Trilha P — Processar':
+      - 'Visão geral': conteudo/nivel-2-metodo-dpia/trilha-p-processar/00-visao-geral.md
+      - 'Mapeamento de processos': conteudo/nivel-2-metodo-dpia/trilha-p-processar/01-mapeamento-de-processos.md
+      - 'Extração de conhecimento tácito': conteudo/nivel-2-metodo-dpia/trilha-p-processar/02-extracao-de-conhecimento-tacito.md
+      - 'Construção do playbook': conteudo/nivel-2-metodo-dpia/trilha-p-processar/03-construcao-do-playbook.md
+      - 'Design do fluxo com IA': conteudo/nivel-2-metodo-dpia/trilha-p-processar/04-design-do-fluxo-com-IA.md
+      - 'Validação com cliente': conteudo/nivel-2-metodo-dpia/trilha-p-processar/05-validacao-com-cliente.md
+    - 'Trilha I — Instruir':
+      - 'Visão geral': conteudo/nivel-2-metodo-dpia/trilha-i-instruir/00-visao-geral.md
+      - 'System prompt canônico': conteudo/nivel-2-metodo-dpia/trilha-i-instruir/01-system-prompt-canonico.md
+      - 'Construção do agente': conteudo/nivel-2-metodo-dpia/trilha-i-instruir/02-construcao-do-agente.md
+      - 'Bateria de testes': conteudo/nivel-2-metodo-dpia/trilha-i-instruir/03-bateria-de-testes.md
+      - 'Iteração e ajuste': conteudo/nivel-2-metodo-dpia/trilha-i-instruir/04-iteracao-e-ajuste.md
+      - 'Homologação com cliente': conteudo/nivel-2-metodo-dpia/trilha-i-instruir/05-homologacao-com-cliente.md
+    - 'Trilha A — Automatizar':
+      - 'Visão geral': conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/00-visao-geral.md
+      - 'Stack de automação': conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/01-stack-de-automacao.md
+      - 'Integração com ERPs brasileiros': conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/02-integracao-com-erps-brasileiros.md
+      - 'Deploy em produção': conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/03-deploy-em-producao.md
+      - 'Medição e resultado': conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/04-medicao-e-resultado.md
+      - 'Handover para acompanhamento': conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/05-handover-para-acompanhamento.md
+
+  - Aplicação:
+    - 'Venda consultiva':
+      - 'Visão geral': conteudo/nivel-3-aplicacao/bloco-a-venda/00-visao-geral.md
+      - 'Posicionamento e nicho': conteudo/nivel-3-aplicacao/bloco-a-venda/01-posicionamento-e-nicho.md
+      - 'Os 3 primeiros clientes': conteudo/nivel-3-aplicacao/bloco-a-venda/02-os-3-primeiros-clientes.md
+      - 'Discovery com SPIN': conteudo/nivel-3-aplicacao/bloco-a-venda/03-discovery-com-spin.md
+      - 'Challenger aplicado a IA': conteudo/nivel-3-aplicacao/bloco-a-venda/04-challenger-aplicado-a-IA.md
+      - 'Proposta vencedora': conteudo/nivel-3-aplicacao/bloco-a-venda/05-proposta-vencedora.md
+      - 'Tratamento de objeções': conteudo/nivel-3-aplicacao/bloco-a-venda/06-tratamento-de-objecoes.md
+    - 'Contrato e entrega':
+      - 'Visão geral': conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/00-visao-geral.md
+      - 'Diagnóstico como produto pago': conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/01-diagnostico-como-produto-pago.md
+      - 'Projeto de preço fixo': conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/02-modelo-de-projeto-fechado.md
+      - 'Contrato de manutenção': conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/03-contrato-de-manutencao-recorrente.md
+      - 'LGPD aplicada ao projeto': conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/04-lgpd-aplicada-ao-projeto.md
+    - 'Sustentação no cliente':
+      - 'Visão geral': conteudo/nivel-3-aplicacao/bloco-c-sustentacao/00-visao-geral.md
+      - 'Treinar o dono primeiro': conteudo/nivel-3-aplicacao/bloco-c-sustentacao/01-treinar-o-dono-primeiro.md
+      - 'Identificar e formar champion': conteudo/nivel-3-aplicacao/bloco-c-sustentacao/02-identificar-e-formar-champion.md
+      - 'Job shadowing e coaching': conteudo/nivel-3-aplicacao/bloco-c-sustentacao/03-job-shadowing-e-coaching.md
+      - 'Micro-vídeos e cheatsheets': conteudo/nivel-3-aplicacao/bloco-c-sustentacao/04-microvideos-e-cheatsheets.md
+      - 'Acompanhamento mensal': conteudo/nivel-3-aplicacao/bloco-c-sustentacao/05-acompanhamento-mensal.md
+
+  - Biblioteca AIOS:
+    - 'Introdução': conteudo/nivel-4-aios/00-introducao.md
+    - 'Stack canônica': conteudo/nivel-4-aios/01-stack-canonica.md
+    - 'Padrões de design': conteudo/nivel-4-aios/02-padroes-de-design.md
+    - 'Níveis de aprovação humana': conteudo/nivel-4-aios/03-niveis-de-aprovacao-humana.md
+    - 'Convenções de módulo': conteudo/nivel-4-aios/04-convencoes-de-modulo.md
+    - 'Módulos Prioridade 1':
+      - 'Atendimento WhatsApp':
+        - 'README': conteudo/nivel-4-aios/modulos-p1/modulo-atendimento-whatsapp/README.md
+        - 'System prompt': conteudo/nivel-4-aios/modulos-p1/modulo-atendimento-whatsapp/system-prompt.md
+        - 'Playbook': conteudo/nivel-4-aios/modulos-p1/modulo-atendimento-whatsapp/playbook.md
+      - 'Pedidos via WhatsApp':
+        - 'README': conteudo/nivel-4-aios/modulos-p1/modulo-pedidos-via-whatsapp/README.md
+        - 'System prompt': conteudo/nivel-4-aios/modulos-p1/modulo-pedidos-via-whatsapp/system-prompt.md
+        - 'Playbook': conteudo/nivel-4-aios/modulos-p1/modulo-pedidos-via-whatsapp/playbook.md
+      - 'Agendamento':
+        - 'README': conteudo/nivel-4-aios/modulos-p1/modulo-agendamento/README.md
+        - 'System prompt': conteudo/nivel-4-aios/modulos-p1/modulo-agendamento/system-prompt.md
+        - 'Playbook': conteudo/nivel-4-aios/modulos-p1/modulo-agendamento/playbook.md
+      - 'Cobrança':
+        - 'README': conteudo/nivel-4-aios/modulos-p1/modulo-cobranca/README.md
+        - 'System prompt': conteudo/nivel-4-aios/modulos-p1/modulo-cobranca/system-prompt.md
+        - 'Playbook': conteudo/nivel-4-aios/modulos-p1/modulo-cobranca/playbook.md
+      - 'Proposta comercial':
+        - 'README': conteudo/nivel-4-aios/modulos-p1/modulo-proposta-comercial/README.md
+        - 'System prompt': conteudo/nivel-4-aios/modulos-p1/modulo-proposta-comercial/system-prompt.md
+        - 'Playbook': conteudo/nivel-4-aios/modulos-p1/modulo-proposta-comercial/playbook.md
+      - 'Resumo de reunião':
+        - 'README': conteudo/nivel-4-aios/modulos-p1/modulo-resumo-de-reuniao/README.md
+        - 'System prompt': conteudo/nivel-4-aios/modulos-p1/modulo-resumo-de-reuniao/system-prompt.md
+        - 'Playbook': conteudo/nivel-4-aios/modulos-p1/modulo-resumo-de-reuniao/playbook.md
+    - 'Módulos Prioridade 2':
+      - 'Pós-venda': conteudo/nivel-4-aios/modulos-p2/modulo-pos-venda/README.md
+      - 'Qualificação de lead': conteudo/nivel-4-aios/modulos-p2/modulo-qualificacao-lead/README.md
+      - 'Conteúdo local': conteudo/nivel-4-aios/modulos-p2/modulo-conteudo-local/README.md
+      - 'Financeiro básico': conteudo/nivel-4-aios/modulos-p2/modulo-financeiro-basico/README.md
+      - 'RH e recrutamento': conteudo/nivel-4-aios/modulos-p2/modulo-rh-recrutamento/README.md
+      - 'Gestão de tarefas': conteudo/nivel-4-aios/modulos-p2/modulo-gestao-tarefas/README.md
+
+  - Fundamentação:
+    - 'Síntese transversal': pesquisa/00-sintese-transversal.md
+    - 'Mercado PME Brasil': pesquisa/01-mercado-pme-brasil.md
+    - 'Métodos e frameworks': pesquisa/02-metodos-frameworks.md
+    - 'Perfis e concorrência': pesquisa/03-perfis-e-concorrencia.md
+    - 'Casos e falhas': pesquisa/04-casos-e-falhas.md
+    - 'Stack técnico': pesquisa/05-stack-tecnico.md
+    - 'Comercial e vendas': pesquisa/06-comercial-e-vendas.md
+    - 'Treinamento do cliente': pesquisa/07-treinamento-cliente.md
+    - 'Decisões estratégicas': DECISOES.md

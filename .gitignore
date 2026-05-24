@@ -6,3 +6,6 @@
 node_modules/
 .env
 .env.local
+site/
+__pycache__/
+*.pyc
