@@ -1,0 +1,6107 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Programa gratuito de formação de Implementadores de Soluções de IA para PMEs brasileiras">
+      
+      
+        <meta name="author" content="Nei Maldaner — inema.vip">
+      
+      
+        <link rel="canonical" href="https://inematds.github.io/profissional2027/pesquisa/04-casos-e-falhas/">
+      
+      
+        <link rel="prev" href="../03-perfis-e-concorrencia/">
+      
+      
+        <link rel="next" href="../05-stack-tecnico/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Casos e falhas - Profissional 2027</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pesquisa-d-casos-reais-e-falhas-em-implementacao-de-ia-em-pmes" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Profissional 2027" class="md-header__button md-logo" aria-label="Profissional 2027" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Profissional 2027
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Casos e falhas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="amber"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="amber"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/inematds/profissional2027" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    inematds/profissional2027
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../conteudo/nivel-1-manifesto/01-manifesto/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Manifesto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../metodo/dpia-canonico/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Método DPIA
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../conteudo/nivel-3-aplicacao/bloco-a-venda/00-visao-geral/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Aplicação
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../conteudo/nivel-4-aios/00-introducao/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Biblioteca AIOS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../00-sintese-transversal/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Fundamentação
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Profissional 2027" class="md-nav__button md-logo" aria-label="Profissional 2027" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Profissional 2027
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/inematds/profissional2027" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    inematds/profissional2027
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manifesto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Manifesto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-1-manifesto/01-manifesto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-1-manifesto/02-tese-de-mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tese de mercado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-1-manifesto/03-perfil-do-profissional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perfil do profissional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-1-manifesto/04-a-oportunidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A oportunidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-1-manifesto/05-por-que-gratuito/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Por que gratuito
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-1-manifesto/06-como-funciona/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Como funciona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Método DPIA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Método DPIA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodo/dpia-canonico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual canônico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trilha D — Diagnosticar
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Trilha D — Diagnosticar
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/00-visao-geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/01-preparacao-pre-diagnostico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preparação pré-diagnóstico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/02-roteiro-de-entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roteiro de entrevista
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/03-mapeamento-de-dor-real/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapeamento de dor real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/04-baseline-numerico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baseline numérico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-d-diagnosticar/05-relatorio-de-diagnostico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relatório de diagnóstico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trilha P — Processar
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Trilha P — Processar
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-p-processar/00-visao-geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-p-processar/01-mapeamento-de-processos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapeamento de processos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-p-processar/02-extracao-de-conhecimento-tacito/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extração de conhecimento tácito
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-p-processar/03-construcao-do-playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Construção do playbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-p-processar/04-design-do-fluxo-com-IA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design do fluxo com IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-p-processar/05-validacao-com-cliente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação com cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trilha I — Instruir
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Trilha I — Instruir
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-i-instruir/00-visao-geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-i-instruir/01-system-prompt-canonico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System prompt canônico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-i-instruir/02-construcao-do-agente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Construção do agente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-i-instruir/03-bateria-de-testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bateria de testes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-i-instruir/04-iteracao-e-ajuste/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Iteração e ajuste
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-i-instruir/05-homologacao-com-cliente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homologação com cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trilha A — Automatizar
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Trilha A — Automatizar
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/00-visao-geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/01-stack-de-automacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stack de automação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/02-integracao-com-erps-brasileiros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integração com ERPs brasileiros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/03-deploy-em-producao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy em produção
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/04-medicao-e-resultado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medição e resultado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-2-metodo-dpia/trilha-a-automatizar/05-handover-para-acompanhamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Handover para acompanhamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aplicação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Venda consultiva
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Venda consultiva
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-a-venda/00-visao-geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-a-venda/01-posicionamento-e-nicho/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posicionamento e nicho
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-a-venda/02-os-3-primeiros-clientes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Os 3 primeiros clientes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-a-venda/03-discovery-com-spin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discovery com SPIN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-a-venda/04-challenger-aplicado-a-IA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenger aplicado a IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-a-venda/05-proposta-vencedora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proposta vencedora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-a-venda/06-tratamento-de-objecoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tratamento de objeções
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contrato e entrega
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contrato e entrega
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/00-visao-geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/01-diagnostico-como-produto-pago/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagnóstico como produto pago
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/02-modelo-de-projeto-fechado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projeto de preço fixo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/03-contrato-de-manutencao-recorrente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contrato de manutenção
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-b-contrato-entrega/04-lgpd-aplicada-ao-projeto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LGPD aplicada ao projeto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sustentação no cliente
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sustentação no cliente
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-c-sustentacao/00-visao-geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-c-sustentacao/01-treinar-o-dono-primeiro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Treinar o dono primeiro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-c-sustentacao/02-identificar-e-formar-champion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identificar e formar champion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-c-sustentacao/03-job-shadowing-e-coaching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Job shadowing e coaching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-c-sustentacao/04-microvideos-e-cheatsheets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Micro-vídeos e cheatsheets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-3-aplicacao/bloco-c-sustentacao/05-acompanhamento-mensal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acompanhamento mensal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biblioteca AIOS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Biblioteca AIOS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/00-introducao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/01-stack-canonica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stack canônica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/02-padroes-de-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Padrões de design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/03-niveis-de-aprovacao-humana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Níveis de aprovação humana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/04-convencoes-de-modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenções de módulo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulos Prioridade 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulos Prioridade 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_6_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-atendimento-whatsapp/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atendimento WhatsApp
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_6_1" id="__nav_5_6_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Atendimento WhatsApp
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-atendimento-whatsapp/system-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-atendimento-whatsapp/playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Playbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_6_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-pedidos-via-whatsapp/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pedidos via WhatsApp
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_6_2" id="__nav_5_6_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pedidos via WhatsApp
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-pedidos-via-whatsapp/system-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-pedidos-via-whatsapp/playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Playbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_6_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-agendamento/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agendamento
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_6_3" id="__nav_5_6_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Agendamento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-agendamento/system-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-agendamento/playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Playbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_6_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-cobranca/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cobrança
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_6_4" id="__nav_5_6_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cobrança
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-cobranca/system-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-cobranca/playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Playbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_6_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-proposta-comercial/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proposta comercial
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_6_5" id="__nav_5_6_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proposta comercial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-proposta-comercial/system-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-proposta-comercial/playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Playbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_6_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-resumo-de-reuniao/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumo de reunião
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_6_6" id="__nav_5_6_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resumo de reunião
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-resumo-de-reuniao/system-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p1/modulo-resumo-de-reuniao/playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Playbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../conteudo/nivel-4-aios/modulos-p2/modulo-pos-venda/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulos Prioridade 2
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulos Prioridade 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p2/modulo-qualificacao-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qualificação de lead
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p2/modulo-conteudo-local/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteúdo local
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p2/modulo-financeiro-basico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Financeiro básico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p2/modulo-rh-recrutamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RH e recrutamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conteudo/nivel-4-aios/modulos-p2/modulo-gestao-tarefas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de tarefas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundamentação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-sintese-transversal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Síntese transversal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-mercado-pme-brasil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mercado PME Brasil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-metodos-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métodos e frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-perfis-e-concorrencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perfis e concorrência
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Casos e falhas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Casos e falhas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-executivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo executivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-catalogo-de-casos-reais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Catálogo de casos reais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Catálogo de casos reais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ficha-01-clinica-de-fisioterapia-salvador-ba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 01 — Clínica de fisioterapia | Salvador, BA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-02-e-commerce-de-cosmeticos-naturais-recife-pe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 02 — E-commerce de cosméticos naturais | Recife, PE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-03-agencia-de-marketing-digital-10-funcionarios-brasilglobal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 03 — Agência de marketing digital | 10 funcionários (Brasil/global)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-04-agencia-de-marketing-documentacao-6-funcionarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 04 — Agência de marketing (documentação) | 6 funcionários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-05-empresa-b2b-industrial-aerotech-eua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 05 — Empresa B2B industrial (Aerotech) | EUA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-06-empresa-de-analytics-keatext-15-funcionarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 06 — Empresa de analytics (Keatext) | 15 funcionários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-07-pme-de-logistica-portugallatam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 07 — PME de logística | Portugal/LATAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-08-pme-de-varejo-e-commerce-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 08 — PME de varejo (e-commerce) | Global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-09-empresa-de-saude-acentra-health-eua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 09 — Empresa de saúde (Acentra Health) | EUA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-10-empresa-de-servicos-financeiros-crediclub-mexico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 10 — Empresa de serviços financeiros (Crediclub) | México
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-11-operacoes-de-ti-delivery-hero-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 11 — Operações de TI (Delivery Hero) | Global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-12-empresa-de-tecnologia-access-holdings-africaglobal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 12 — Empresa de tecnologia (Access Holdings) | África/Global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-13-pme-de-clinica-medicasaude-brasil-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 13 — PME de clínica médica/saúde | Brasil (benchmark)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-14-pme-varejo-loja-fisica-com-e-commerce-brasil-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 14 — PME varejo (loja física com e-commerce) | Brasil (benchmark)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-15-pme-de-manufatura-eua-fortune-500-para-benchmarking-de-padrao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 15 — PME de manufatura | EUA (Fortune 500 para benchmarking de padrão)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-16-empresa-de-automacao-de-vendas-via-whatsapp-brasil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 16 — Empresa de automação de vendas via WhatsApp | Brasil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-17-contabilidade-automatizada-carrefour-brasil-referencia-de-padrao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 17 — Contabilidade automatizada (Carrefour Brasil — referência de padrão)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-18-pme-de-clinica-odontologicasaude-brasil-padrao-whatsapp-n8n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 18 — PME de clínica odontológica/saúde | Brasil (padrão WhatsApp + n8n)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-19-empresa-de-desenvolvimento-de-software-allpay-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 19 — Empresa de desenvolvimento de software (Allpay) | Global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-20-pme-de-servicos-perfil-emergente-brasil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 20 — PME de serviços (perfil emergente) | Brasil
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-padroes-de-sucesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Padrões de sucesso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-padroes-de-falha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Padrões de falha
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-top-10-razoes-de-falha-em-projetos-de-ia-em-pme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Top 10 razões de falha em projetos de IA em PME
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-anti-padroes-tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Anti-padrões técnicos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-anti-padroes-comerciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Anti-padrões comerciais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-anti-padroes-de-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Anti-padrões de processo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-roi-tipico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. ROI típico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. ROI típico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#faixas-por-tipo-de-projeto-fontes-benchmarks-internacionais-e-brasileiros-2024-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faixas por tipo de projeto (fontes: benchmarks internacionais e brasileiros 2024-2026)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referencia-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referência geral
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-do-paradoxo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação do paradoxo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-setores-de-sucesso-consistente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Setores de sucesso consistente
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Setores de sucesso consistente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setores-com-roi-mais-rapido-e-mais-consistente-para-pmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setores com ROI mais rápido e mais consistente para PMEs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setores-com-maior-complexidade-de-implementacao-para-pmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setores com maior complexidade de implementação para PMEs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-faixas-de-custo-no-brasil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Faixas de custo no Brasil
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Faixas de custo no Brasil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-automacao-plataformas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ferramentas de automação (plataformas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucoes-integradas-whatsapp-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soluções integradas WhatsApp IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementacao-customizada-servico-de-implementador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementação customizada (serviço de implementador)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observacao-importante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observação importante
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicacoes-para-o-metodo-dpia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implicações para o método DPIA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fontes-citadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fontes citadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-stack-tecnico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stack técnico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-comercial-e-vendas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comercial e vendas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-treinamento-cliente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Treinamento do cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DECISOES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decisões estratégicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-executivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo executivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-catalogo-de-casos-reais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Catálogo de casos reais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Catálogo de casos reais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ficha-01-clinica-de-fisioterapia-salvador-ba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 01 — Clínica de fisioterapia | Salvador, BA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-02-e-commerce-de-cosmeticos-naturais-recife-pe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 02 — E-commerce de cosméticos naturais | Recife, PE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-03-agencia-de-marketing-digital-10-funcionarios-brasilglobal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 03 — Agência de marketing digital | 10 funcionários (Brasil/global)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-04-agencia-de-marketing-documentacao-6-funcionarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 04 — Agência de marketing (documentação) | 6 funcionários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-05-empresa-b2b-industrial-aerotech-eua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 05 — Empresa B2B industrial (Aerotech) | EUA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-06-empresa-de-analytics-keatext-15-funcionarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 06 — Empresa de analytics (Keatext) | 15 funcionários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-07-pme-de-logistica-portugallatam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 07 — PME de logística | Portugal/LATAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-08-pme-de-varejo-e-commerce-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 08 — PME de varejo (e-commerce) | Global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-09-empresa-de-saude-acentra-health-eua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 09 — Empresa de saúde (Acentra Health) | EUA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-10-empresa-de-servicos-financeiros-crediclub-mexico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 10 — Empresa de serviços financeiros (Crediclub) | México
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-11-operacoes-de-ti-delivery-hero-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 11 — Operações de TI (Delivery Hero) | Global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-12-empresa-de-tecnologia-access-holdings-africaglobal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 12 — Empresa de tecnologia (Access Holdings) | África/Global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-13-pme-de-clinica-medicasaude-brasil-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 13 — PME de clínica médica/saúde | Brasil (benchmark)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-14-pme-varejo-loja-fisica-com-e-commerce-brasil-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 14 — PME varejo (loja física com e-commerce) | Brasil (benchmark)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-15-pme-de-manufatura-eua-fortune-500-para-benchmarking-de-padrao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 15 — PME de manufatura | EUA (Fortune 500 para benchmarking de padrão)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-16-empresa-de-automacao-de-vendas-via-whatsapp-brasil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 16 — Empresa de automação de vendas via WhatsApp | Brasil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-17-contabilidade-automatizada-carrefour-brasil-referencia-de-padrao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 17 — Contabilidade automatizada (Carrefour Brasil — referência de padrão)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-18-pme-de-clinica-odontologicasaude-brasil-padrao-whatsapp-n8n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 18 — PME de clínica odontológica/saúde | Brasil (padrão WhatsApp + n8n)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-19-empresa-de-desenvolvimento-de-software-allpay-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 19 — Empresa de desenvolvimento de software (Allpay) | Global
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ficha-20-pme-de-servicos-perfil-emergente-brasil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ficha 20 — PME de serviços (perfil emergente) | Brasil
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-padroes-de-sucesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Padrões de sucesso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-padroes-de-falha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Padrões de falha
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-top-10-razoes-de-falha-em-projetos-de-ia-em-pme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Top 10 razões de falha em projetos de IA em PME
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-anti-padroes-tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Anti-padrões técnicos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-anti-padroes-comerciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Anti-padrões comerciais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-anti-padroes-de-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Anti-padrões de processo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-roi-tipico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. ROI típico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. ROI típico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#faixas-por-tipo-de-projeto-fontes-benchmarks-internacionais-e-brasileiros-2024-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faixas por tipo de projeto (fontes: benchmarks internacionais e brasileiros 2024-2026)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referencia-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referência geral
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-do-paradoxo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação do paradoxo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-setores-de-sucesso-consistente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Setores de sucesso consistente
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Setores de sucesso consistente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setores-com-roi-mais-rapido-e-mais-consistente-para-pmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setores com ROI mais rápido e mais consistente para PMEs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setores-com-maior-complexidade-de-implementacao-para-pmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setores com maior complexidade de implementação para PMEs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-faixas-de-custo-no-brasil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Faixas de custo no Brasil
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Faixas de custo no Brasil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-automacao-plataformas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ferramentas de automação (plataformas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucoes-integradas-whatsapp-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soluções integradas WhatsApp IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementacao-customizada-servico-de-implementador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementação customizada (serviço de implementador)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observacao-importante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observação importante
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicacoes-para-o-metodo-dpia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implicações para o método DPIA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fontes-citadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fontes citadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/inematds/profissional2027/edit/main/pesquisa/04-casos-e-falhas.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="pesquisa-d-casos-reais-e-falhas-em-implementacao-de-ia-em-pmes">Pesquisa D — Casos reais e falhas em implementação de IA em PMEs<a class="headerlink" href="#pesquisa-d-casos-reais-e-falhas-em-implementacao-de-ia-em-pmes" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Documento de base para o programa Profissional 2027 (SISNEMA / inema.club)
+Data de coleta: maio de 2026 | Idioma: PT-BR | Cobertura: Brasil, LATAM e global</p>
+</blockquote>
+<hr />
+<h2 id="resumo-executivo">Resumo executivo<a class="headerlink" href="#resumo-executivo" title="Permanent link">&para;</a></h2>
+<p>A evidência coletada de fontes primárias (Microsoft, MIT/NANDA, Gartner, RAND, Sebrae, SocialHub, benchmarks brasileiros de WhatsApp IA) aponta para um paradoxo: a adoção de IA em PMEs cresce de forma acelerada — 44% dos empreendedores brasileiros já usam alguma solução, 68% das PMEs brasileiras operam atendimento 24h via WhatsApp IA em 2026 — mas 70 a 95% dos projetos não geram retorno financeiro mensurável. O problema não é tecnológico: é de diagnóstico, processo e gestão de mudança. PMEs que partem de um problema específico, implantam em escopo pequeno e medem resultado concreto antes de escalar obtêm ROI em 45 a 90 dias. As que contratam "IA" como solução genérica, sem problema definido e sem dado estruturado, abandonam o projeto em até seis meses.</p>
+<hr />
+<h2 id="1-catalogo-de-casos-reais">1. Catálogo de casos reais<a class="headerlink" href="#1-catalogo-de-casos-reais" title="Permanent link">&para;</a></h2>
+<h3 id="ficha-01-clinica-de-fisioterapia-salvador-ba">Ficha 01 — Clínica de fisioterapia | Salvador, BA<a class="headerlink" href="#ficha-01-clinica-de-fisioterapia-salvador-ba" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Clínica do Dr. Fábio, Rio Vermelho, Salvador. ~5 funcionários.</li>
+<li><strong>Problema:</strong> 30% dos contatos via WhatsApp chegavam após as 18h; recepcionista não conseguia atender fora do horário comercial; pacientes desistiam.</li>
+<li><strong>Solução:</strong> Chatbot de IA no WhatsApp Business (plataforma low-code, RAG com FAQ da clínica). Identifica intenção de agendamento, coleta dados e abre tarefa para recepcionista no dia seguinte.</li>
+<li><strong>Stack:</strong> WhatsApp Business API + plataforma de chatbot conversacional (Sem.chat ou equivalente) + integração com agenda.</li>
+<li><strong>Resultado:</strong> +22% em avaliações agendadas no primeiro trimestre de 2026. Carga da recepcionista reduzida nas consultas fora de horário.</li>
+<li><strong>Lição:</strong> O ganho não foi "economia de funcionário" — foi captura de demanda que existia e estava sendo perdida. ROI veio de receita nova, não de corte de custo.</li>
+<li><strong>Fonte:</strong> Hábito Diário Free (hdfree.com.br), maio 2026.</li>
+</ul>
+<hr />
+<h3 id="ficha-02-e-commerce-de-cosmeticos-naturais-recife-pe">Ficha 02 — E-commerce de cosméticos naturais | Recife, PE<a class="headerlink" href="#ficha-02-e-commerce-de-cosmeticos-naturais-recife-pe" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Loja virtual de cosméticos naturais. Proprietária solo + 1 assistente.</li>
+<li><strong>Problema:</strong> 40% de abandono de carrinho concentrado na página de pagamento por dúvidas técnicas sobre produtos (ingredientes alergênicos, adequação para pele sensível). Proprietária gastava 2h/dia respondendo manualmente no Instagram.</li>
+<li><strong>Solução:</strong> Chatbot integrado ao site, treinado com base de conhecimento dos produtos. Responde dúvidas em tempo real em português coloquial.</li>
+<li><strong>Stack:</strong> Plataforma de chatbot conversacional (Sem.chat) + base de conhecimento própria (sem treinar modelo do zero).</li>
+<li><strong>Resultado:</strong> Queda de 18 pontos percentuais no abandono de carrinho em 4 meses. Tempo da proprietária em atendimento: de 2h/dia para 30min/dia.</li>
+<li><strong>Lição:</strong> Problema bem definido (abandonou onde? por quê?) = resultado fácil de medir. A IA não substituiu a proprietária — liberou tempo para tarefas estratégicas.</li>
+<li><strong>Fonte:</strong> Hábito Diário Free (hdfree.com.br), maio 2026.</li>
+</ul>
+<hr />
+<h3 id="ficha-03-agencia-de-marketing-digital-10-funcionarios-brasilglobal">Ficha 03 — Agência de marketing digital | 10 funcionários (Brasil/global)<a class="headerlink" href="#ficha-03-agencia-de-marketing-digital-10-funcionarios-brasilglobal" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Agência de marketing digital de porte pequeno, 10 pessoas.</li>
+<li><strong>Problema:</strong> Gargalo na criação de conteúdo limitava a capacidade de atender novos clientes.</li>
+<li><strong>Solução:</strong> Assistente de IA (GPT via ChatGPT Plus) para rascunho de blogs, posts e e-mails. Geração de imagens com IA para redes sociais. Relatórios automatizados com insights de IA.</li>
+<li><strong>Stack:</strong> ChatGPT Plus ($20/mês) + Jasper AI + Midjourney + biblioteca de prompts proprietária.</li>
+<li><strong>Implementação:</strong> 2 semanas.</li>
+<li><strong>Resultado (6 meses):</strong> Produção de conteúdo dobrou (mesma equipe). Carteira: 12 para 18 clientes (+50%). Receita: +US$180.000.</li>
+<li><strong>Custo total:</strong> US$2.000 setup + US$1.200 ferramentas (6 meses) = US$3.200.</li>
+<li><strong>ROI calculado:</strong> 5.525%.</li>
+<li><strong>Lição:</strong> Pequenos negócios têm ROI proporcionalmente mais alto porque barreiras de adoção são menores e o overhead de change management é reduzido.</li>
+<li><strong>Fonte:</strong> AI Prompts X / aipromptsx.com (compilação de casos 2025).</li>
+</ul>
+<hr />
+<h3 id="ficha-04-agencia-de-marketing-documentacao-6-funcionarios">Ficha 04 — Agência de marketing (documentação) | 6 funcionários<a class="headerlink" href="#ficha-04-agencia-de-marketing-documentacao-6-funcionarios" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Agência de marketing de médio porte, dono + 2 gerentes + 2 especialistas + 1 admin.</li>
+<li><strong>Problema:</strong> Processos administrativos fragmentados (Calendly, Slack, Trello, CRM) consumindo 15+ horas/semana.</li>
+<li><strong>Solução:</strong> Automação n8n da jornada de novo lead: booking → enriquecimento de dados → CRM → Slack → Trello. Onboarding automatizado. Atualizações de status.</li>
+<li><strong>Stack:</strong> n8n self-hosted (ou cloud ~$25/mês) + Calendly + Google Workspace + CRM low-cost.</li>
+<li><strong>Resultado:</strong> 20+ horas/semana economizadas. Follow-ups perdidos reduzidos a zero. Informações centralizadas.</li>
+<li><strong>Lição:</strong> Automação de um processo já bem definido entrega resultado rápido. n8n substituiu Zapier com economia de ~$400/mês.</li>
+<li><strong>Fonte:</strong> TechBuddies.io (techbuddies.io), dezembro 2025.</li>
+</ul>
+<hr />
+<h3 id="ficha-05-empresa-b2b-industrial-aerotech-eua">Ficha 05 — Empresa B2B industrial (Aerotech) | EUA<a class="headerlink" href="#ficha-05-empresa-b2b-industrial-aerotech-eua" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Aerotech — empresa B2B industrial.</li>
+<li><strong>Problema:</strong> Baixa taxa de conversão de vendas, equipe gastando tempo excessivo em qualificação manual.</li>
+<li><strong>Solução:</strong> HubSpot Sales Hub com IA para qualificação automatizada e priorização de leads.</li>
+<li><strong>Resultado (3 meses):</strong> +66% na taxa de fechamento. 18 horas/semana economizadas pela equipe.</li>
+<li><strong>Lição:</strong> IA de vendas em contexto B2B funciona melhor quando o processo de qualificação já é bem definido antes da automação.</li>
+<li><strong>Fonte:</strong> HubSpot ROI Report 2025.</li>
+</ul>
+<hr />
+<h3 id="ficha-06-empresa-de-analytics-keatext-15-funcionarios">Ficha 06 — Empresa de analytics (Keatext) | 15 funcionários<a class="headerlink" href="#ficha-06-empresa-de-analytics-keatext-15-funcionarios" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Keatext AI — empresa de análise de dados, 15 pessoas.</li>
+<li><strong>Problema:</strong> Taxa de qualificação de leads em 20%; demos de vendas insuficientes.</li>
+<li><strong>Solução:</strong> Plataforma de marketing com IA (HubSpot) para qualificação automática e nutrição de leads.</li>
+<li><strong>Resultado:</strong> Taxa de qualificação: de 20% para 90%+ (+450%). Demos de vendas: +50%.</li>
+<li><strong>Lição:</strong> Empresas de tecnologia têm dados mais estruturados — facilita implementação de IA de marketing com resultados rápidos.</li>
+<li><strong>Fonte:</strong> HubSpot ROI Report 2025.</li>
+</ul>
+<hr />
+<h3 id="ficha-07-pme-de-logistica-portugallatam">Ficha 07 — PME de logística | Portugal/LATAM<a class="headerlink" href="#ficha-07-pme-de-logistica-portugallatam" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Empresa de logística de pequeno porte (país não especificado na fonte).</li>
+<li><strong>Problema:</strong> Alto volume de consultas de status de encomenda consumindo tempo da equipe de atendimento.</li>
+<li><strong>Solução:</strong> Chatbot com IA integrado ao sistema de rastreamento, responde localização de encomendas em tempo real via WhatsApp.</li>
+<li><strong>Resultado:</strong> Redução de 60% no tempo médio de atendimento.</li>
+<li><strong>Lição:</strong> Automação de consultas repetitivas com dado estruturado é o caso de uso com ROI mais rápido e mais previsível.</li>
+<li><strong>Fonte:</strong> Nexai.com.br / LusoAI (compilação LATAM 2025-2026).</li>
+</ul>
+<hr />
+<h3 id="ficha-08-pme-de-varejo-e-commerce-global">Ficha 08 — PME de varejo (e-commerce) | Global<a class="headerlink" href="#ficha-08-pme-de-varejo-e-commerce-global" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> E-commerce de varejo, porte pequeno.</li>
+<li><strong>Problema:</strong> Baixa conversão e retenção de clientes.</li>
+<li><strong>Solução:</strong> Motor de recomendação de produtos com IA integrado ao checkout.</li>
+<li><strong>Stack:</strong> Plataforma de e-commerce + API de recomendação por IA.</li>
+<li><strong>Resultado (6 semanas):</strong> Ticket médio +15%. Retenção de clientes +12%. ROI positivo em 45 dias.</li>
+<li><strong>Lição:</strong> Recomendação de produto é um dos casos de uso de IA com ROI mais rápido em e-commerce — dado de comportamento já existe na plataforma.</li>
+<li><strong>Fonte:</strong> Done For You (doneforyou.com), 2025.</li>
+</ul>
+<hr />
+<h3 id="ficha-09-empresa-de-saude-acentra-health-eua">Ficha 09 — Empresa de saúde (Acentra Health) | EUA<a class="headerlink" href="#ficha-09-empresa-de-saude-acentra-health-eua" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Acentra Health — empresa de tecnologia em saúde.</li>
+<li><strong>Problema:</strong> Documentação clínica (notas de enfermagem) consumindo horas de trabalho manual.</li>
+<li><strong>Solução:</strong> MedScribe — ferramenta de documentação baseada em Azure OpenAI.</li>
+<li><strong>Resultado:</strong> 11.000 horas de enfermagem economizadas. Economia de ~US$800.000.</li>
+<li><strong>Lição:</strong> Documentação clínica é o caso de uso de IA em saúde com ROI mais imediato — tarefa de alta frequência, baixo julgamento clínico, texto estruturado.</li>
+<li><strong>Fonte:</strong> Microsoft Customer Stories 2025.</li>
+</ul>
+<hr />
+<h3 id="ficha-10-empresa-de-servicos-financeiros-crediclub-mexico">Ficha 10 — Empresa de serviços financeiros (Crediclub) | México<a class="headerlink" href="#ficha-10-empresa-de-servicos-financeiros-crediclub-mexico" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Crediclub — fintech de crédito, México.</li>
+<li><strong>Problema:</strong> Processo de auditoria de reuniões de vendas manual e ineficiente para 800 consultores.</li>
+<li><strong>Solução:</strong> Azure OpenAI para análise automatizada de reuniões gravadas.</li>
+<li><strong>Resultado:</strong> Economia de 96% nos custos de auditoria/mês. Capacidade: 150 reuniões analisadas por hora. 800 consultores e 150 gerentes liberados para atendimento direto.</li>
+<li><strong>Lição:</strong> Auditoria de qualidade em escala é um caso de uso poderoso de IA em operações de vendas — resultado mensurável e defesa de ROI simples.</li>
+<li><strong>Fonte:</strong> Microsoft Customer Stories 2025.</li>
+</ul>
+<hr />
+<h3 id="ficha-11-operacoes-de-ti-delivery-hero-global">Ficha 11 — Operações de TI (Delivery Hero) | Global<a class="headerlink" href="#ficha-11-operacoes-de-ti-delivery-hero-global" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Delivery Hero — plataforma de food delivery (53.000+ funcionários, mas o caso é de uma equipe de TI interna de porte reduzido).</li>
+<li><strong>Problema:</strong> 800 bloqueios de conta/mês, 35 minutos cada para resolver manualmente.</li>
+<li><strong>Solução:</strong> Workflows n8n para recuperação de conta, sincronização de dados e coordenação operacional.</li>
+<li><strong>Resultado:</strong> 200+ horas/mês economizadas em um único conjunto de automações.</li>
+<li><strong>Lição:</strong> Tratar n8n como infraestrutura (monitorado, versionado, mantido) — não como solução rápida — é o que garante sustentabilidade do resultado.</li>
+<li><strong>Fonte:</strong> Goodspeed Studio / n8n Case Studies 2026.</li>
+</ul>
+<hr />
+<h3 id="ficha-12-empresa-de-tecnologia-access-holdings-africaglobal">Ficha 12 — Empresa de tecnologia (Access Holdings) | África/Global<a class="headerlink" href="#ficha-12-empresa-de-tecnologia-access-holdings-africaglobal" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Access Holdings Plc — empresa de serviços financeiros/tecnologia.</li>
+<li><strong>Problema:</strong> Desenvolvimento lento de código, processos demorados de apresentação e comunicação.</li>
+<li><strong>Solução:</strong> Microsoft 365 Copilot para desenvolvimento, criação de apresentações e comunicação.</li>
+<li><strong>Resultado:</strong> Código: de 8h para 2h (-75%). Chatbots: de 3 meses para 10 dias de lançamento. Apresentações: de 6h para 45min.</li>
+<li><strong>Lição:</strong> Ferramentas de produtividade com IA entregam resultado proporcional ao volume de tarefas repetitivas de conhecimento que a equipe executa.</li>
+<li><strong>Fonte:</strong> Microsoft Customer Stories 2025.</li>
+</ul>
+<hr />
+<h3 id="ficha-13-pme-de-clinica-medicasaude-brasil-benchmark">Ficha 13 — PME de clínica médica/saúde | Brasil (benchmark)<a class="headerlink" href="#ficha-13-pme-de-clinica-medicasaude-brasil-benchmark" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Clínica de saúde brasileira (perfil representativo do benchmark SocialHub 2026).</li>
+<li><strong>Problema:</strong> Tempo de primeira resposta de 4h7min no WhatsApp. CSAT 4,1/5. Custo por resolução: R$4,20.</li>
+<li><strong>Solução:</strong> Atendimento 24/7 com IA no WhatsApp (LLM + RAG + WhatsApp Cloud API).</li>
+<li><strong>Stack:</strong> GPT-4o ou Claude + vector database (RAG) + WhatsApp Cloud API + plataforma de orquestração. Custo total: R$980 a R$2.400/mês.</li>
+<li><strong>Resultado:</strong> Tempo de resposta: de 4h7min para 47 segundos. CSAT: 4,1 → 4,6. Deflection rate: 62-78%. Custo por resolução: de R$4,20 para R$0,42 (-90%).</li>
+<li><strong>Lição:</strong> O impacto mais relevante para PMEs de saúde não é custo operacional — é satisfação do paciente e disponibilidade 24h, que se traduz em retenção e reputação.</li>
+<li><strong>Fonte:</strong> SocialHub Brasil, Benchmark WhatsApp IA 2026 (socialhub.pro).</li>
+</ul>
+<hr />
+<h3 id="ficha-14-pme-varejo-loja-fisica-com-e-commerce-brasil-benchmark">Ficha 14 — PME varejo (loja física com e-commerce) | Brasil (benchmark)<a class="headerlink" href="#ficha-14-pme-varejo-loja-fisica-com-e-commerce-brasil-benchmark" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Loja de varejo brasileira com canal digital (perfil representativo do benchmark SocialHub 2026).</li>
+<li><strong>Problema:</strong> Pico de atendimento nos fins de semana sem equipe disponível; conversão online abaixo do potencial.</li>
+<li><strong>Solução:</strong> WhatsApp Business AI (Meta) — lançado no Brasil em fevereiro de 2026, gratuito para PMEs. Treinado com catálogo, horários e FAQ da empresa.</li>
+<li><strong>Stack:</strong> WhatsApp Business App (gratuito) + configuração de agente IA nativo da Meta.</li>
+<li><strong>Resultado:</strong> Cobertura 24/7 sem custo adicional de pessoal. Resposta contextual baseada em catálogo.</li>
+<li><strong>Limitação documentada:</strong> Para volumes acima de 500 mensagens/mês ou integrações com CRM/e-commerce, o agente nativo da Meta não é suficiente — necessário migrar para Cloud API com orquestração.</li>
+<li><strong>Fonte:</strong> SocialHub Brasil, Guia WhatsApp Business AI 2026 (socialhub.pro).</li>
+</ul>
+<hr />
+<h3 id="ficha-15-pme-de-manufatura-eua-fortune-500-para-benchmarking-de-padrao">Ficha 15 — PME de manufatura | EUA (Fortune 500 para benchmarking de padrão)<a class="headerlink" href="#ficha-15-pme-de-manufatura-eua-fortune-500-para-benchmarking-de-padrao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Empresa global de manufatura (&gt;10.000 funcionários — incluída pela qualidade do dado de falha/lição).</li>
+<li><strong>Problema:</strong> Tempo imprevisto de parada de equipamento custando US$2M/mês.</li>
+<li><strong>Solução:</strong> IoT + modelos de IA para manutenção preditiva + agendamento automatizado.</li>
+<li><strong>Implementação:</strong> 6 meses.</li>
+<li><strong>Resultado (18 meses):</strong> Paradas não planejadas: -62%. Custos de manutenção: -US$8M/ano. Incidentes de segurança: -45%.</li>
+<li><strong>Custo:</strong> US$2,6M em 18 meses.</li>
+<li><strong>ROI:</strong> 823%.</li>
+<li><strong>Lição para PMEs:</strong> O padrão de sucesso (dado existente no equipamento, processo crítico, métrica clara) é replicável em escala menor. A diferença é o investimento inicial — PME deve começar com 1-2 equipamentos críticos, não a fábrica inteira.</li>
+<li><strong>Fonte:</strong> AI Prompts X (aipromptsx.com), compilação de casos 2025.</li>
+</ul>
+<hr />
+<h3 id="ficha-16-empresa-de-automacao-de-vendas-via-whatsapp-brasil">Ficha 16 — Empresa de automação de vendas via WhatsApp | Brasil<a class="headerlink" href="#ficha-16-empresa-de-automacao-de-vendas-via-whatsapp-brasil" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Empresa de serviços (B2B, vendas consultivas) — caso documentado pela Nexai.</li>
+<li><strong>Problema:</strong> SDRs gastando tempo excessivo em qualificação e follow-up manual no WhatsApp.</li>
+<li><strong>Solução:</strong> Agente de IA n8n + WhatsApp API para qualificação inicial, envio de proposta automatizada e follow-up sequenciado.</li>
+<li><strong>Stack:</strong> n8n + WhatsApp Cloud API + LLM (GPT-4o) + Google Sheets como CRM básico.</li>
+<li><strong>Resultado:</strong> Capacidade de SDR multiplicada (mesmo profissional atende 3x mais leads). Tempo de primeiro contato: imediato vs. horas antes.</li>
+<li><strong>Lição:</strong> n8n + WhatsApp é a combinação mais adotada por implementadores brasileiros para PMEs — baixo custo, alta flexibilidade, sem dependência de plataformas proprietárias caras.</li>
+<li><strong>Fonte:</strong> Nexai.com.br, 2025-2026.</li>
+</ul>
+<hr />
+<h3 id="ficha-17-contabilidade-automatizada-carrefour-brasil-referencia-de-padrao">Ficha 17 — Contabilidade automatizada (Carrefour Brasil — referência de padrão)<a class="headerlink" href="#ficha-17-contabilidade-automatizada-carrefour-brasil-referencia-de-padrao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Carrefour Brasil (grande empresa, incluída pelo dado de padrão de uso em finanças).</li>
+<li><strong>Problema:</strong> Revisão manual de faturas consumindo horas de equipe financeira.</li>
+<li><strong>Solução:</strong> IA para automação de revisão de faturas.</li>
+<li><strong>Resultado:</strong> Economia de R$100.000/ano apenas na revisão de faturas.</li>
+<li><strong>Lição para PMEs:</strong> O padrão (documento repetitivo + verificação de dados estruturados) é replicável em qualquer escritório de contabilidade ou setor financeiro de PME. Custo de implementação para PME: R$3.000 a R$8.000 de setup + R$500 a R$2.000/mês de operação.</li>
+<li><strong>Fonte:</strong> Compilação de casos brasileiros (Nexai, ValorPME, 2025).</li>
+</ul>
+<hr />
+<h3 id="ficha-18-pme-de-clinica-odontologicasaude-brasil-padrao-whatsapp-n8n">Ficha 18 — PME de clínica odontológica/saúde | Brasil (padrão WhatsApp + n8n)<a class="headerlink" href="#ficha-18-pme-de-clinica-odontologicasaude-brasil-padrao-whatsapp-n8n" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Clínica odontológica brasileira (perfil representativo, documentado em múltiplas fontes de implementação).</li>
+<li><strong>Problema:</strong> Faltas e cancelamentos de última hora. Equipe gastos ligando para confirmar consultas.</li>
+<li><strong>Solução:</strong> n8n + WhatsApp API para confirmação automática de consultas 24h antes, reagendamento automático em caso de cancelamento, lembrete de retorno.</li>
+<li><strong>Stack:</strong> n8n + WhatsApp Cloud API + Google Calendar ou agenda própria.</li>
+<li><strong>Resultado documentado (referência de mercado):</strong> Clínicas implementando esse padrão reportam redução de 25% em faltas e aumento de 15% em satisfação de pacientes.</li>
+<li><strong>Custo de implementação:</strong> R$1.500 a R$4.000 de setup. R$300 a R$800/mês de operação.</li>
+<li><strong>Fonte:</strong> Nexai.com.br + LusoAI + OpenClaw Brasil, compilação 2025-2026.</li>
+</ul>
+<hr />
+<h3 id="ficha-19-empresa-de-desenvolvimento-de-software-allpay-global">Ficha 19 — Empresa de desenvolvimento de software (Allpay) | Global<a class="headerlink" href="#ficha-19-empresa-de-desenvolvimento-de-software-allpay-global" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Allpay — empresa de tecnologia de pagamentos.</li>
+<li><strong>Problema:</strong> Velocidade de desenvolvimento abaixo do potencial; volume de entregas em produção limitado.</li>
+<li><strong>Solução:</strong> GitHub Copilot para assistência de código.</li>
+<li><strong>Resultado:</strong> Produtividade de engenheiros: +10%. Volume entregue em produção: +25%.</li>
+<li><strong>Lição:</strong> Ferramentas de assistência a código têm ROI rápido em equipes técnicas — mas o ganho é de velocidade e qualidade, não de redução de equipe.</li>
+<li><strong>Fonte:</strong> Microsoft Customer Stories 2025.</li>
+</ul>
+<hr />
+<h3 id="ficha-20-pme-de-servicos-perfil-emergente-brasil">Ficha 20 — PME de serviços (perfil emergente) | Brasil<a class="headerlink" href="#ficha-20-pme-de-servicos-perfil-emergente-brasil" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Empresa:</strong> Consultoria com 8 funcionários (caso citado em múltiplas fontes brasileiras de 2024-2025).</li>
+<li><strong>Problema:</strong> Capacidade de atender clientes limitada pela geração manual de propostas comerciais.</li>
+<li><strong>Solução:</strong> IA generativa para automação de geração de propostas customizadas a partir de briefing do cliente.</li>
+<li><strong>Stack:</strong> ChatGPT (Plus ou API) + template de proposta em Notion ou Google Docs + prompt de contextualização do negócio.</li>
+<li><strong>Resultado:</strong> Triplicou o número de clientes atendidos com a mesma equipe.</li>
+<li><strong>Custo:</strong> Menos de R$200/mês em ferramentas.</li>
+<li><strong>Lição:</strong> Automação de documento de alta frequência (proposta, relatório, brief) com IA é o caso de uso mais acessível para PMEs de serviços — ROI em semanas.</li>
+<li><strong>Fonte:</strong> Precisio.global / Wslabs.ai, compilação 2024-2025.</li>
+</ul>
+<hr />
+<h2 id="2-padroes-de-sucesso">2. Padrões de sucesso<a class="headerlink" href="#2-padroes-de-sucesso" title="Permanent link">&para;</a></h2>
+<p>Os 20 casos analisados revelam seis padrões que se repetem nos projetos que funcionaram:</p>
+<p><strong>Padrão S1 — Problema específico antes da ferramenta.</strong>
+Todos os casos de sucesso partem de uma dor identificada com clareza: "perco 30% dos leads fora do horário", "gasto 2h/dia respondendo a mesma pergunta", "confirmação de consulta custa X horas da equipe". A ferramenta é consequência do diagnóstico, não o ponto de partida.</p>
+<p><strong>Padrão S2 — Dado já existe e está estruturado.</strong>
+Casos de sucesso rápido usam dados que a empresa já tem: catálogo de produtos, FAQ, agenda, histórico de conversas. Não há projeto de "criação de base de dados" antes da implementação. Onde os dados precisaram ser criados do zero, o prazo de retorno foi mais longo.</p>
+<p><strong>Padrão S3 — Escopo pequeno, medição imediata.</strong>
+O piloto é restrito a um canal, uma etapa do processo, um produto ou um tipo de cliente. O resultado é medido em 30 a 90 dias. Só após validação o escopo é ampliado.</p>
+<p><strong>Padrão S4 — Humano no loop (não substituído).</strong>
+Nos casos de atendimento, o padrão vencedor é: IA resolve 62-78% (deflection rate) e passa ao humano com contexto completo. Nenhum caso de sucesso eliminou o atendente humano — todos o liberaram para casos de maior valor.</p>
+<p><strong>Padrão S5 — Stack enxuta e de baixo custo inicial.</strong>
+Os casos brasileiros de sucesso usam, predominantemente: WhatsApp Cloud API + LLM via API (GPT-4o ou Claude) + n8n ou Make para orquestração. Custo mensal recorrente: R$500 a R$2.500 para a maioria dos casos de PME.</p>
+<p><strong>Padrão S6 — Responsável interno treinado.</strong>
+Em todos os casos de sucesso documentados, havia uma pessoa dentro da empresa que entendia o suficiente para ajustar prompts, atualizar a base de conhecimento e monitorar métricas. Não dependia exclusivamente do implementador externo após o go-live.</p>
+<hr />
+<h2 id="3-padroes-de-falha">3. Padrões de falha<a class="headerlink" href="#3-padroes-de-falha" title="Permanent link">&para;</a></h2>
+<p>Os estudos agregados (Gartner, RAND, MIT/NANDA, IBM, NTT Data) revelam que 70-95% dos projetos de IA não entregam o ROI esperado. Os padrões de falha que se repetem:</p>
+<p><strong>Padrão F1 — Sem problema definido.</strong>
+A empresa contratou "IA" como produto, não como solução a um problema específico. Resultado: projeto piloto entrega protótipo bonito, não entrega resultado de negócio. Gartner denomina esse padrão como "use-case drift" — o problema original desaparece das reuniões e o projeto vira discussão sobre tecnologia.</p>
+<p><strong>Padrão F2 — Dados inexistentes ou fragmentados.</strong>
+Gartner (2025): 85% dos projetos de IA falham por dados de baixa qualidade. Empresas trabalham com planilhas Excel dispersas, informação no WhatsApp pessoal de funcionários, sem histórico estruturado. IA sem dado é prompt sem contexto.</p>
+<p><strong>Padrão F3 — Piloto que não sai do piloto.</strong>
+Gartner projetou (julho 2024) que 30% dos projetos de IA generativa seriam abandonados após a prova de conceito até o final de 2025. O piloto funciona em condições controladas; a produção expõe edge cases, integrações quebradas e resistência da equipe.</p>
+<p><strong>Padrão F4 — Resistência cultural não gerenciada.</strong>
+70% das falhas têm resistência cultural como fator relevante, segundo síntese de relatórios IBM/Deloitte. Medo de perda de emprego, hábitos arraigados, ausência de patrocínio da liderança. A tecnologia funcionou; a organização não adotou.</p>
+<p><strong>Padrão F5 — Métricas de sucesso não definidas antes.</strong>
+Projeto começa sem estabelecer o que seria "funcionar". Ao final, não há como demonstrar ROI, o projeto é visto como custo, não como investimento. O "sucesso" vira subjetivo.</p>
+<p><strong>Padrão F6 — Escala prematura.</strong>
+Solução validada em um canal ou processo é expandida para toda a operação antes de resolver os problemas do piloto. Resultado: problemas se multiplicam, equipe perde confiança, projeto é cancelado.</p>
+<hr />
+<h2 id="4-top-10-razoes-de-falha-em-projetos-de-ia-em-pme">4. Top 10 razões de falha em projetos de IA em PME<a class="headerlink" href="#4-top-10-razoes-de-falha-em-projetos-de-ia-em-pme" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Razão</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Dados de baixa qualidade ou inexistentes</td>
+<td>Gartner 2025: 85% das falhas ligadas a dados. NTT Data: 70-85% dos projetos GenAI não atingem ROI por problema de dados.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Ausência de problema de negócio definido</td>
+<td>RAND 2026: 80,3% dos projetos de IA não entregam valor prometido; causa primária: falta de clareza no caso de uso.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Resistência cultural e falta de gestão de mudança</td>
+<td>Síntese IBM/Deloitte: 70% das falhas têm resistência cultural como fator. Microsoft Work Trend Index: 39% receberam treinamento em IA.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Projeto não sai do piloto (pilot purgatory)</td>
+<td>Gartner: 30% abandonados após PoC. ServicePath: 95% dos pilotos corporativos falham.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Expectativas irrealistas de ROI</td>
+<td>MIT/NANDA 2025: 95% das empresas não obtêm retorno financeiro com IA generativa.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Falta de patrocínio da liderança</td>
+<td>PMI Blog 2025: Ausência de sponsor executivo é segunda causa de falha em projetos de IA.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Integração frágil com sistemas legados</td>
+<td>Particle41 / Compunnel 2025: Integração com sistemas existentes é a principal barreira técnica após o piloto.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Ausência de métricas de sucesso pré-definidas</td>
+<td>Deloitte 2026: Documentado como "drift" — objetivo inicial desaparece, projeto vira discussão técnica.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Automação de processo já ruim (garbage in, garbage out)</td>
+<td>Padrão documentado em múltiplas fontes: automatizar processo defeituoso acelera o defeito.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Dependência total do implementador externo</td>
+<td>Sem responsável interno treinado, o projeto quebra na primeira atualização ou mudança de processo.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-anti-padroes-tecnicos">5. Anti-padrões técnicos<a class="headerlink" href="#5-anti-padroes-tecnicos" title="Permanent link">&para;</a></h2>
+<p><strong>AT1 — Substituir humano em vez de apoiar.</strong>
+Implementar chatbot com objetivo de eliminar atendentes. Resultado: casos complexos ficam presos em loops de automação, clientes frustrados, NPS despenca. O padrão vencedor é deflection (62-78%) + handoff com contexto, não substituição total.
+<em>Evidência: Helpcenter.io 2025 — "The Chatbot Trap: Why Automation First is Failing Your Customers".</em></p>
+<p><strong>AT2 — Prompt sem contexto de negócio.</strong>
+Usar ChatGPT "puro", sem sistema prompt contextualizado, sem base de conhecimento da empresa, sem tom de voz definido. Resultado: respostas genéricas, inconsistentes, que não representam a empresa e que criam problemas com clientes.
+<em>Evidência: Casos de implementação brasileiros — chatbots "soltos" sem RAG são a principal reclamação de PMEs que abandonaram projetos.</em></p>
+<p><strong>AT3 — Falta de dados estruturados para treinar/alimentar o modelo.</strong>
+Tentar implementar IA em processo cuja informação está no WhatsApp pessoal de funcionários, em papéis ou na cabeça do dono. Sem dado estruturado, não há RAG, não há fine-tuning, não há nada que diferencie a IA de uma resposta genérica.
+<em>Evidência: Gartner 2025 — "Lack of AI-Ready Data Puts AI Projects at Risk".</em></p>
+<p><strong>AT4 — Integração frágil via scraping ou workarounds.</strong>
+Conectar IA a sistemas legados por caminhos não oficiais (scraping de tela, exportação manual de planilhas). Quebra na primeira atualização do sistema legado.
+<em>Evidência: Padrão documentado por Particle41 e Compunnel, 2025.</em></p>
+<p><strong>AT5 — Modelo superdimensionado para o problema.</strong>
+Usar GPT-4o (custo alto) para responder "qual é o horário de funcionamento". Ou construir sistema de ML customizado quando um chatbot simples com FAQ resolveria. Custo desnecessário que distorce o ROI.</p>
+<p><strong>AT6 — Sem monitoramento pós-implantação.</strong>
+Implantar e abandonar. LLMs alucinam. Bases de conhecimento ficam desatualizadas. Sem revisão periódica (mínimo mensal), a qualidade degrada e o cliente percebe antes do implementador.</p>
+<hr />
+<h2 id="6-anti-padroes-comerciais">6. Anti-padrões comerciais<a class="headerlink" href="#6-anti-padroes-comerciais" title="Permanent link">&para;</a></h2>
+<p><strong>AC1 — Vender ferramenta em vez de resultado.</strong>
+O implementador entrega "um chatbot no WhatsApp" como produto. O cliente não sabe o que medir, não entende o que comprou, não consegue defender o investimento internamente. Na próxima crise de caixa, o "chatbot" é cortado.
+<em>Correção: Vender redução de custo por ticket, tempo de resposta, taxa de conversão — não tecnologia.</em></p>
+<p><strong>AC2 — Contrato sem manutenção e atualização.</strong>
+Projeto entregue sem cláusula de revisão de base de conhecimento, atualização de prompts, monitoramento de métricas. Após 90 dias, o chatbot responde errado (produto descontinuado, preço desatualizado, horário mudou). Cliente culpa "a IA".</p>
+<p><strong>AC3 — Cliente sem treinamento mínimo.</strong>
+Responsável interno não sabe atualizar a FAQ, não sabe quando o bot está errando, não sabe como escalar um problema para o implementador. Dependência total cria fragilidade.</p>
+<p><strong>AC4 — Promessa de ROI irreal no processo de venda.</strong>
+"Vamos triplicar suas vendas em 30 dias com IA." Expectativa irrealista → decepção garantida → churn → reputação do implementador destruída.</p>
+<p><strong>AC5 — Projeto sem diagnóstico de processo.</strong>
+Implementar automação antes de mapear o processo atual. Resultado: automatiza o processo errado ou automatiza uma etapa que não era o gargalo real. PME paga e não resolve o problema.</p>
+<p><strong>AC6 — Ignorar LGPD no processo de venda e implementação.</strong>
+ANPD aplicou R$30 milhões em multas em 2025 a empresas que ignoraram a legislação de dados. PMEs que usam WhatsApp API para marketing sem consentimento documentado correm risco real de multa e bloqueio de número.
+<em>Evidência: SocialHub Brasil, Benchmark WhatsApp IA 2026.</em></p>
+<hr />
+<h2 id="7-anti-padroes-de-processo">7. Anti-padrões de processo<a class="headerlink" href="#7-anti-padroes-de-processo" title="Permanent link">&para;</a></h2>
+<p><strong>AP1 — Pular o diagnóstico.</strong>
+Ir direto da "ideia de IA" para a implementação sem mapear: qual é o processo atual? Onde está o gargalo? Quais dados existem? Quem vai operar? Como o sucesso será medido? É o anti-padrão mais comum e mais caro.</p>
+<p><strong>AP2 — Automatizar processo ruim.</strong>
+Processo manual defeituoso → automação → processo defeituoso na velocidade da máquina. IA não conserta processo ruim; ela amplifica o que existe. Antes de automatizar, o processo precisa funcionar manualmente de forma consistente.
+<em>Analogia: "Automatizar um processo ruim é como contratar mais funcionários para fazer a coisa errada mais rápido."</em></p>
+<p><strong>AP3 — Escalar antes de validar.</strong>
+Piloto funciona com 50 leads → imediatamente implantado para toda a operação de 5.000 leads. Edge cases aparecem, integrações quebram, equipe não foi treinada para o volume. O padrão correto é: piloto → ajuste → piloto ampliado → validação → escala.</p>
+<p><strong>AP4 — Não definir o "humano responsável".</strong>
+Implantar sem nomear quem dentro da empresa é dono do processo de IA. Sem dono, ninguém monitora, ninguém atualiza, ninguém resolve quando quebra.</p>
+<p><strong>AP5 — Medir apenas adoção, não resultado.</strong>
+"O chatbot respondeu 1.000 mensagens este mês" não é ROI. A métrica certa é: quantas conversões a mais? Quanto tempo economizado? Qual o custo por resolução antes e depois?</p>
+<p><strong>AP6 — Ignorar o processo de handoff humano-IA.</strong>
+Não definir quando e como o bot transfere para humano. Cliente em situação de conflito ou urgência preso em loop de automação = NPS negativo e reclamação pública.</p>
+<hr />
+<h2 id="8-roi-tipico">8. ROI típico<a class="headerlink" href="#8-roi-tipico" title="Permanent link">&para;</a></h2>
+<h3 id="faixas-por-tipo-de-projeto-fontes-benchmarks-internacionais-e-brasileiros-2024-2026">Faixas por tipo de projeto (fontes: benchmarks internacionais e brasileiros 2024-2026)<a class="headerlink" href="#faixas-por-tipo-de-projeto-fontes-benchmarks-internacionais-e-brasileiros-2024-2026" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tipo de Projeto</th>
+<th>Prazo de ROI Positivo</th>
+<th>ROI Típico</th>
+<th>Fonte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chatbot WhatsApp atendimento (PME)</td>
+<td>45-90 dias</td>
+<td>3-10x custo mensal</td>
+<td>SocialHub BR 2026</td>
+</tr>
+<tr>
+<td>Automação de documentos (propostas, relatórios)</td>
+<td>2-4 semanas</td>
+<td>500-5.000%</td>
+<td>AI Prompts X 2025</td>
+</tr>
+<tr>
+<td>Qualificação de leads com IA (CRM)</td>
+<td>60-90 dias</td>
+<td>200-500%</td>
+<td>HubSpot ROI 2025</td>
+</tr>
+<tr>
+<td>Automação de processo com n8n/Make</td>
+<td>30-60 dias</td>
+<td>400-800% (base: horas economizadas)</td>
+<td>Techbuddies, n8n Cases 2025</td>
+</tr>
+<tr>
+<td>Recomendação de produtos (e-commerce)</td>
+<td>45 dias</td>
+<td>300-600%</td>
+<td>Done For You 2025</td>
+</tr>
+<tr>
+<td>Projetos complexos (ML, dados, integração)</td>
+<td>6-18 meses</td>
+<td>Variável</td>
+<td>Gartner, IBM</td>
+</tr>
+</tbody>
+</table>
+<h3 id="referencia-geral">Referência geral<a class="headerlink" href="#referencia-geral" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Salesforce 2025: 91% das PMEs que usam IA reportam crescimento de receita.</li>
+<li>Bain &amp; Company: empresas com IA generativa estruturada reportam +14% de produtividade e +9% de resultado financeiro.</li>
+<li>Média global (todas as PMEs): US$3,70 de retorno por dólar investido em automação com IA (USM Systems / Fullview.io 2025).</li>
+<li>MIT/NANDA 2025: 95% das implementações NÃO geram retorno — o dado coexiste com os anteriores porque a maioria dos projetos não começa com problema definido e dado estruturado.</li>
+</ul>
+<h3 id="interpretacao-do-paradoxo">Interpretação do paradoxo<a class="headerlink" href="#interpretacao-do-paradoxo" title="Permanent link">&para;</a></h3>
+<p>O ROI é alto quando o projeto segue os padrões de sucesso (S1-S6). O fracasso é massivo quando não segue. A diferença é diagnóstico + escopo pequeno + métrica definida + dado estruturado.</p>
+<hr />
+<h2 id="9-setores-de-sucesso-consistente">9. Setores de sucesso consistente<a class="headerlink" href="#9-setores-de-sucesso-consistente" title="Permanent link">&para;</a></h2>
+<p>Com base na análise dos 20 casos e nos relatórios setoriais (Microsoft, Salesforce, HubSpot, Sebrae, AWS LATAM):</p>
+<h3 id="setores-com-roi-mais-rapido-e-mais-consistente-para-pmes">Setores com ROI mais rápido e mais consistente para PMEs<a class="headerlink" href="#setores-com-roi-mais-rapido-e-mais-consistente-para-pmes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Setor</th>
+<th>Caso de Uso Principal</th>
+<th>Por que funciona</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saúde (clínicas, consultórios)</td>
+<td>Agendamento 24h, confirmação, FAQ</td>
+<td>Alta frequência de contato, dado estruturado (agenda), impacto direto em receita (redução de faltas, captura fora do horário)</td>
+</tr>
+<tr>
+<td>Comércio eletrônico / varejo</td>
+<td>Atendimento, recomendação, recuperação de carrinho</td>
+<td>Dado de produto estruturado, comportamento de compra mensurável, ROI calculável em ticket médio e conversão</td>
+</tr>
+<tr>
+<td>Serviços profissionais (consultoria, agência, escritórios)</td>
+<td>Geração de documentos, relatórios, propostas</td>
+<td>Alta frequência de documentos repetitivos, conhecimento já estruturado, liberação de tempo de profissional qualificado</td>
+</tr>
+<tr>
+<td>Serviços financeiros (contabilidade, crédito)</td>
+<td>Auditoria automatizada, análise de documentos</td>
+<td>Dado financeiro estruturado, regulamentação cria demanda por auditoria, ROI fácil de calcular</td>
+</tr>
+<tr>
+<td>Logística e operações</td>
+<td>Rastreamento, atendimento, confirmação de entrega</td>
+<td>Dado de localização estruturado, consultas repetitivas de altíssima frequência</td>
+</tr>
+<tr>
+<td>Educação e treinamento</td>
+<td>Suporte a alunos, FAQ, acompanhamento</td>
+<td>Alta escala de alunos com perguntas repetitivas, disponibilidade 24/7 valorizada</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setores-com-maior-complexidade-de-implementacao-para-pmes">Setores com maior complexidade de implementação para PMEs<a class="headerlink" href="#setores-com-maior-complexidade-de-implementacao-para-pmes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Manufatura/Indústria:</strong> Requer dado de sensor/IoT, integração com ERP, investimento inicial mais alto.</li>
+<li><strong>Agro (Brasil):</strong> Potencial alto, mas dado estruturado é escasso em PMEs rurais.</li>
+<li><strong>Jurídico:</strong> Risco regulatório alto, necessidade de supervisão humana em todo output, ROI mais lento.</li>
+</ul>
+<hr />
+<h2 id="10-faixas-de-custo-no-brasil">10. Faixas de custo no Brasil<a class="headerlink" href="#10-faixas-de-custo-no-brasil" title="Permanent link">&para;</a></h2>
+<h3 id="ferramentas-de-automacao-plataformas">Ferramentas de automação (plataformas)<a class="headerlink" href="#ferramentas-de-automacao-plataformas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>Plano PME</th>
+<th>Custo Mensal (R$)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Make (Integromat)</td>
+<td>Core (10.000 ops)</td>
+<td>R$48</td>
+</tr>
+<tr>
+<td>Make</td>
+<td>Pro</td>
+<td>R$86</td>
+</tr>
+<tr>
+<td>n8n</td>
+<td>Cloud básico</td>
+<td>R$130-200 (equiv.)</td>
+</tr>
+<tr>
+<td>n8n</td>
+<td>Self-hosted</td>
+<td>R$0 (infra própria)</td>
+</tr>
+<tr>
+<td>Zapier</td>
+<td>Starter</td>
+<td>R$100-200</td>
+</tr>
+<tr>
+<td>ChatGPT Plus (OpenAI)</td>
+<td>Individual</td>
+<td>~R$100</td>
+</tr>
+<tr>
+<td>ChatGPT API (GPT-4o)</td>
+<td>Por uso</td>
+<td>Variável (~R$50-500/mês PME)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Fonte: Eupresa IA (eupresa.ia.br), Toolradar, fevereiro-maio 2026.</em></p>
+<h3 id="solucoes-integradas-whatsapp-ia">Soluções integradas WhatsApp IA<a class="headerlink" href="#solucoes-integradas-whatsapp-ia" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Incluído</th>
+<th>Custo Mensal (R$)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WhatsApp Business AI nativo (Meta)</td>
+<td>Agente básico, sem integração externa</td>
+<td>R$0 (gratuito)</td>
+</tr>
+<tr>
+<td>Plataforma PME (SocialHub, equivalentes)</td>
+<td>LLM + RAG + WhatsApp API + orquestração</td>
+<td>R$197-800</td>
+</tr>
+<tr>
+<td>Solução intermediária (PME 50-150 func.)</td>
+<td>LLM + RAG + CRM integration</td>
+<td>R$980-2.400</td>
+</tr>
+</tbody>
+</table>
+<p><em>Fonte: SocialHub Brasil 2026.</em></p>
+<h3 id="implementacao-customizada-servico-de-implementador">Implementação customizada (serviço de implementador)<a class="headerlink" href="#implementacao-customizada-servico-de-implementador" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tipo de Projeto</th>
+<th>Setup (R$)</th>
+<th>Manutenção Mensal (R$)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chatbot simples (FAQ + agendamento)</td>
+<td>R$1.500-4.000</td>
+<td>R$300-800</td>
+</tr>
+<tr>
+<td>Automação n8n básica (1-3 workflows)</td>
+<td>R$2.000-5.000</td>
+<td>R$500-1.200</td>
+</tr>
+<tr>
+<td>Agente de vendas/atendimento completo</td>
+<td>R$5.000-15.000</td>
+<td>R$1.000-3.000</td>
+</tr>
+<tr>
+<td>Projeto com integração CRM/ERP</td>
+<td>R$15.000-50.000</td>
+<td>R$2.000-8.000</td>
+</tr>
+<tr>
+<td>ML customizado (previsão, dados)</td>
+<td>R$100.000-500.000</td>
+<td>R$10.000+</td>
+</tr>
+</tbody>
+</table>
+<p><em>Fontes: Eupresa IA, Waxi, Rocketmídia, compilação de mercado 2025-2026.</em></p>
+<h3 id="observacao-importante">Observação importante<a class="headerlink" href="#observacao-importante" title="Permanent link">&para;</a></h3>
+<p>O custo de ferramentas (R$50-500/mês para a maioria dos casos de PME) é acessível. O custo real de um projeto mal conduzido é: implementação desperdiçada + perda do cliente + reputação do implementador. O maior risco financeiro não é o custo da ferramenta — é o custo de um projeto sem diagnóstico.</p>
+<hr />
+<h2 id="implicacoes-para-o-metodo-dpia">Implicações para o método DPIA<a class="headerlink" href="#implicacoes-para-o-metodo-dpia" title="Permanent link">&para;</a></h2>
+<p>Os dados coletados sustentam as seguintes implicações diretas para a formação de implementadores:</p>
+<p><strong>1. Diagnóstico é inegociável — e é onde a maioria pula.</strong>
+95% dos projetos sem retorno começa sem problema definido. O método DPIA deve ter o "D" como a etapa mais longa e mais ensinada. Sem diagnóstico, não há projeto — há venda de ferramenta.</p>
+<p><strong>2. O implementador precisa ser consultor de processo antes de ser técnico.</strong>
+Os casos de sucesso não foram ganhos pela escolha da melhor ferramenta. Foram ganhos pelo diagnóstico correto do problema e pelo mapeamento do processo antes da automação.</p>
+<p><strong>3. Dados são o ativo — ensinar PMEs a estruturá-los é parte do serviço.</strong>
+A maioria das PMEs brasileiras tem dado disperso (WhatsApp, planilha, papel). O implementador que ajuda a estruturar o dado cria dependência saudável e valor duradouro.</p>
+<p><strong>4. Stack padrão para PME brasileira já está estabelecida.</strong>
+WhatsApp Cloud API + LLM (GPT-4o/Claude via API) + n8n/Make + RAG simples. Custo: R$500-2.500/mês. ROI em 45-90 dias quando problema é correto. Ensinar essa stack específica é mais valioso do que ensinar "IA em geral".</p>
+<p><strong>5. Anti-padrões comerciais matam o mercado.</strong>
+Vendas de "IA" sem resultado e sem manutenção criam clientes desencantados que viram referência negativa. O implementador formado pelo programa precisa entender que entregar ROI mensurável é a única forma de construir reputação sustentável no mercado de PMEs.</p>
+<p><strong>6. O "GenAI Divide" é uma oportunidade de mercado.</strong>
+MIT/NANDA 2025: existe uma divisão crescente entre empresas que usam IA para produtividade tática e as que a integram estrategicamente. O implementador bem formado posiciona a PME no segundo grupo — e isso é o diferencial competitivo do serviço.</p>
+<p><strong>7. Setor saúde e e-commerce são os vetores de entrada mais indicados para novos implementadores.</strong>
+ROI mais rápido, dados mais estruturados, menor resistência cultural, cliente com dor clara. Ótimos mercados para construir casos de estudo reais durante a formação.</p>
+<hr />
+<h2 id="fontes-citadas">Fontes citadas<a class="headerlink" href="#fontes-citadas" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Hábito Diário Free</strong> — "Como pequenos negócios brasileiros estão usando chatbots de IA em 2026: três casos práticos" (hdfree.com.br, maio 2026)</p>
+</li>
+<li>
+<p><strong>SocialHub Brasil</strong> — "Atendimento 24/7 WhatsApp com IA: ROI, Deflection Rate e Benchmark BR 2026" (socialhub.pro, maio 2026)</p>
+</li>
+<li>
+<p><strong>SocialHub Brasil</strong> — "WhatsApp Business AI no Brasil em 2026: O Que É, Como Funciona e Quando Sua PME Precisa de Mais" (socialhub.pro, 2026)</p>
+</li>
+<li>
+<p><strong>Eupresa IA</strong> — "Quanto Custa Automatizar sua Empresa com IA: Tabela de Preços 2026" (eupresa.ia.br, fevereiro 2026)</p>
+</li>
+<li>
+<p><strong>MIT Technology Review Brasil / NANDA (MIT)</strong> — "Por que 95% dos projetos de IA não dão retorno" — Relatório Estado da IA nos Negócios 2025 (mittechreview.com.br, 2025)</p>
+</li>
+<li>
+<p><strong>AI Prompts X</strong> — "8 AI Case Studies with Proven ROI (Up to 26,567%)" (aipromptsx.com, 2025)</p>
+</li>
+<li>
+<p><strong>Done For You</strong> — "Case Study: How Small Businesses Are Winning with AI Tools in 2025" (doneforyou.com, 2025)</p>
+</li>
+<li>
+<p><strong>BarnRaisers / McKinsey</strong> — "10 ROI of AI case studies show results" (barnraisersllc.com, junho 2025)</p>
+</li>
+<li>
+<p><strong>Goodspeed Studio</strong> — "n8n Case Studies 2026: How Organizations Use Automation" (goodspeed.studio, março 2026)</p>
+</li>
+<li>
+<p><strong>TechBuddies.io</strong> — "Case Study: How n8n Automation Saved a Small Business 20+ Hours a Week" (techbuddies.io, dezembro 2025)</p>
+</li>
+<li>
+<p><strong>Síncrona.pt</strong> — "Agentes Inteligentes + Chatbots: 5 Casos Reais de PME Portuguesas que Aumentaram Receitas até 30%" (sincrona.pt, setembro 2025)</p>
+</li>
+<li>
+<p><strong>Microsoft Customer Stories</strong> — Acentra Health, Crediclub, Access Holdings, Allpay (microsoft.com/en/customers, 2025)</p>
+</li>
+<li>
+<p><strong>HubSpot ROI Report 2025</strong> — Casos Aerotech e Keatext (hubspot.com, 2025)</p>
+</li>
+<li>
+<p><strong>Gartner</strong> — "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025" (gartner.com, julho 2024)</p>
+</li>
+<li>
+<p><strong>Gartner</strong> — "Lack of AI-Ready Data Puts AI Projects at Risk" (gartner.com, fevereiro 2025)</p>
+</li>
+<li>
+<p><strong>Gartner</strong> — "Gartner Says AI Projects in I&amp;O Stall Ahead of Meaningful ROI Returns" (gartner.com, abril 2026)</p>
+</li>
+<li>
+<p><strong>NTT DATA</strong> — "Between 70-85% of GenAI deployment efforts are failing to meet their desired ROI" (nttdata.com, 2024)</p>
+</li>
+<li>
+<p><strong>RAND Corporation</strong> — "The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed: Avoiding the Anti-Patterns of AI" — RRA2680-1 (rand.org, 2026)</p>
+</li>
+<li>
+<p><strong>PMI Blog</strong> — "Why Most AI Projects Fail: 10 Mistakes to Avoid" (pmi.org, 2025)</p>
+</li>
+<li>
+<p><strong>Prismatic Technologies</strong> — "Why Do 70% of AI Projects Fail?" (prismatic-technologies.com, 2025)</p>
+</li>
+<li>
+<p><strong>Helpcenter.io</strong> — "The Chatbot Trap: Why 'Automation First' is Failing Your Customers" (helpcenter.io, 2025)</p>
+</li>
+<li>
+<p><strong>Nexai.com.br</strong> — "Vendas pelo WhatsApp: Como automatizamos com n8n e IA" (nexai.com.br, 2025-2026)</p>
+</li>
+<li>
+<p><strong>Microsoft / Edelman</strong> — "75% das MPMEs no Brasil estão otimistas sobre o impacto da IA" — Pesquisa Microsoft+Edelman MPMEs Brasil 2024 (news.microsoft.com, 2024)</p>
+</li>
+<li>
+<p><strong>Sebrae</strong> — "Inteligência Artificial e Inovação: Como Pequenas Empresas Podem se Beneficiar" (sebraepr.com.br, 2025)</p>
+</li>
+<li>
+<p><strong>Precisio Global</strong> — "IA nas empresas de pequeno e médio porte no Brasil" (precisio.global, 2024-2025)</p>
+</li>
+<li>
+<p><strong>USM Systems / Fullview.io</strong> — "Small Business AI Adoption Statistics 2025" / "200+ AI Statistics &amp; Trends for 2025" (usmsystems.com / fullview.io, 2025)</p>
+</li>
+<li>
+<p><strong>Salesforce</strong> — "SMB AI Trends 2025: 91% de SMBs usando IA veem crescimento de receita" (salesforce.com, 2025)</p>
+</li>
+<li>
+<p><strong>Bain &amp; Company</strong> — Estudo sobre produtividade e resultados financeiros com IA generativa estruturada (bain.com, 2024-2025)</p>
+</li>
+</ol>
+<hr />
+<p><em>Documento gerado para o programa Profissional 2027 (SISNEMA/inema.club). Uso interno para desenvolvimento de conteúdo de formação. Última atualização: maio de 2026.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Conteúdo livre para uso, adaptação e redistribuição. inema.vip · inema.club
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/inematds" target="_blank" rel="noopener" title="GitHub inematds" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://inema.vip" target="_blank" rel="noopener" title="inema.vip" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://inema.club" target="_blank" rel="noopener" title="inema.club" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="m48 195.8 209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1c-9.8-4-20.2-6.1-30.8-6.1s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160v296c0 13.3 10.7 24 24 24s24-10.7 24-24zm48 71.7V384c0 53 86 96 192 96s192-43 192-96V267.4l-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.tracking", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
